@@ -51,25 +51,25 @@
       </div>
 <script src='./mouseSelect.js'></script>
 <script>
-		var html="",
-		cols="";
-      for (var row = 0; row < 18; row++) {
-        for (var col = 0; col < 32; col++) {
-			cols=cols+'<td class="fileDiv"></td>'
-		}
-		html = html + '<tr>'+cols+'</tr>'
-		cols="";
-      }
-	  $("table").append(html)
-	  
-	  
-      mouseSelect(
-        ".fileDiv",
-        ".table",
-        "#mouseContainer",
-        ".context-create",
-        function insertDiv(list, unieId) {console.log(list,unieId)}
-      ); 
+	var html="",
+	cols="";
+	for (var row = 0; row < 18; row++) {
+	for (var col = 0; col < 32; col++) {
+		cols=cols+'<td class="fileDiv"></td>'
+	}
+	html = html + '<tr>'+cols+'</tr>'
+	cols="";
+	}
+	$("table").append(html)
+
+
+	mouseSelect(
+	".fileDiv",
+	".table",
+	"#mouseContainer",
+	".context-create",
+	function insertDiv(list, unieId) {console.log(list,unieId)}
+	); 
 </script>
 </body> 
 </html>
